@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    
+    <title></title>
+</head>
+<body>
+    <h1>Hello Knockout</h1>
+    
+    <section>
+        Records: <div data-bind="text: people().length" class="label"></div>
+        <ul data-bind="foreach: people">
+            <li>
+                <span data-bind="text: name"></span>
+                <input data-bind="value: name"/>
+            </li>
+        </ul>
+    </section>
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="Scripts/knockout-3.3.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="./test.js"></script>
+</body>
+</html>
+
